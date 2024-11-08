@@ -1,0 +1,10 @@
+services:
+- type: web
+  name: url-to-mp3
+  runtime: python
+  repo: https://github.com/sudo-self/url-to-mp3
+  plan: free
+  region: oregon
+  buildCommand: pip install -r requirements.txt
+  startCommand: python app.py
+version: "1"
